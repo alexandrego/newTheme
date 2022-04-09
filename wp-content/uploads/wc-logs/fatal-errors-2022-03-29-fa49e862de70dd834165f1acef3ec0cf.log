@@ -1,0 +1,60 @@
+2022-03-29T18:08:22+00:00 CRITICAL Uncaught Error: Call to undefined method WooCommerce::get() in /var/www/html/wp-content/plugins/api-diamond-nautica/api-diamond-nautica.php:44
+Stack trace:
+#0 /var/www/html/wp-includes/rest-api/class-wp-rest-server.php(1141): respond_message(Object(WP_REST_Request))
+#1 /var/www/html/wp-includes/rest-api/class-wp-rest-server.php(988): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/api-diamond-na...', Array, NULL)
+#2 /var/www/html/wp-includes/rest-api/class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#3 /var/www/html/wp-includes/rest-api.php(386): WP_REST_Server->serve_request('/api-diamond-na...')
+#4 /var/www/html/wp-includes/class-wp-hook.php(307): rest_api_loaded(Object(WP))
+#5 /var/www/html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/html/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#7 /var/www/html/wp-includes/class-wp.php(396): do_action_ref_array('parse_request', Array)
+#8 /var/www/html/wp-includes/class-wp.ph, em /var/www/html/wp-content/plugins/api-diamond-nautica/api-diamond-nautica.php, na linha 44
+
+2022-03-29T18:11:08+00:00 CRITICAL Uncaught Error: Call to undefined method WooCommerce::get() in /var/www/html/wp-content/plugins/api-diamond-nautica/api-diamond-nautica.php:44
+Stack trace:
+#0 /var/www/html/wp-includes/rest-api/class-wp-rest-server.php(1141): respond_message(Object(WP_REST_Request))
+#1 /var/www/html/wp-includes/rest-api/class-wp-rest-server.php(988): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/api-diamond-na...', Array, NULL)
+#2 /var/www/html/wp-includes/rest-api/class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#3 /var/www/html/wp-includes/rest-api.php(386): WP_REST_Server->serve_request('/api-diamond-na...')
+#4 /var/www/html/wp-includes/class-wp-hook.php(307): rest_api_loaded(Object(WP))
+#5 /var/www/html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/html/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#7 /var/www/html/wp-includes/class-wp.php(396): do_action_ref_array('parse_request', Array)
+#8 /var/www/html/wp-includes/class-wp.ph, em /var/www/html/wp-content/plugins/api-diamond-nautica/api-diamond-nautica.php, na linha 44
+
+2022-03-29T18:11:52+00:00 CRITICAL Uncaught Error: Call to undefined method WooCommerce::get() in /var/www/html/wp-content/plugins/api-diamond-nautica/api-diamond-nautica.php:44
+Stack trace:
+#0 /var/www/html/wp-includes/rest-api/class-wp-rest-server.php(1141): respond_message(Object(WP_REST_Request))
+#1 /var/www/html/wp-includes/rest-api/class-wp-rest-server.php(988): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/api-diamond-na...', Array, NULL)
+#2 /var/www/html/wp-includes/rest-api/class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#3 /var/www/html/wp-includes/rest-api.php(386): WP_REST_Server->serve_request('/api-diamond-na...')
+#4 /var/www/html/wp-includes/class-wp-hook.php(307): rest_api_loaded(Object(WP))
+#5 /var/www/html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/html/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#7 /var/www/html/wp-includes/class-wp.php(396): do_action_ref_array('parse_request', Array)
+#8 /var/www/html/wp-includes/class-wp.ph, em /var/www/html/wp-content/plugins/api-diamond-nautica/api-diamond-nautica.php, na linha 44
+
+2022-03-29T18:53:28+00:00 CRITICAL Uncaught Error: Call to undefined method WooCommerce::get() in /var/www/html/wp-content/plugins/api-diamond-nautica/api-diamond-nautica.php:43
+Stack trace:
+#0 /var/www/html/wp-includes/rest-api/class-wp-rest-server.php(1141): respond_message(Object(WP_REST_Request))
+#1 /var/www/html/wp-includes/rest-api/class-wp-rest-server.php(988): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/api-diamond-na...', Array, NULL)
+#2 /var/www/html/wp-includes/rest-api/class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#3 /var/www/html/wp-includes/rest-api.php(386): WP_REST_Server->serve_request('/api-diamond-na...')
+#4 /var/www/html/wp-includes/class-wp-hook.php(307): rest_api_loaded(Object(WP))
+#5 /var/www/html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/html/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#7 /var/www/html/wp-includes/class-wp.php(396): do_action_ref_array('parse_request', Array)
+#8 /var/www/html/wp-includes/class-wp.ph, em /var/www/html/wp-content/plugins/api-diamond-nautica/api-diamond-nautica.php, na linha 43
+
+2022-03-29T18:54:08+00:00 CRITICAL Uncaught Error: Call to undefined method WooCommerce::get() in /var/www/html/wp-content/plugins/api-diamond-nautica/api-diamond-nautica.php:43
+Stack trace:
+#0 /var/www/html/wp-includes/rest-api/class-wp-rest-server.php(1141): respond_message(Object(WP_REST_Request))
+#1 /var/www/html/wp-includes/rest-api/class-wp-rest-server.php(988): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/api-diamond-na...', Array, NULL)
+#2 /var/www/html/wp-includes/rest-api/class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#3 /var/www/html/wp-includes/rest-api.php(386): WP_REST_Server->serve_request('/api-diamond-na...')
+#4 /var/www/html/wp-includes/class-wp-hook.php(307): rest_api_loaded(Object(WP))
+#5 /var/www/html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#6 /var/www/html/wp-includes/plugin.php(522): WP_Hook->do_action(Array)
+#7 /var/www/html/wp-includes/class-wp.php(396): do_action_ref_array('parse_request', Array)
+#8 /var/www/html/wp-includes/class-wp.ph, em /var/www/html/wp-content/plugins/api-diamond-nautica/api-diamond-nautica.php, na linha 43
+

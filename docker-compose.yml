@@ -1,0 +1,49 @@
+version: '3.9'
+
+services:
+
+  db:
+    image: mysql:5.7
+    container_name: DiamondNautica-db
+    restart: always
+    volumes:
+      # - db_data:/var/lib/mysql
+      - ./db:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: diamondn_
+      MYSQL_USER: alexandre
+      MYSQL_PASSWORD: desenvolvimento33616518
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'no'
+      MYSQL_ROOT_PASSWORD: desenvolvimento33616518
+
+  wordpress:
+    image: wordpress:5.9.1
+    container_name: DiamondNautica
+    restart: always
+    depends_on: ['db']
+    ports: ['8000:80']
+    links: ['db:db']
+    volumes:
+      - ./wp-content:/var/www/html/wp-content
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_NAME: diamondn_
+      WORDPRESS_DB_USER: alexandre
+      WORDPRESS_DB_PASSWORD: desenvolvimento33616518
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:4.9.7
+    container_name: PhpMyAdminDiamond
+    restart: always
+    depends_on: ['db']
+    ports: ['12000:80']
+    links: ['db:db']
+    environment:
+      - PMA_HOST-db
+      - PMA_USER-alexandre
+      - PMA_PASSWORD-desenvolvimento33616518
+
+
+volumes:
+  db_data: {}
+  wp-content: {}

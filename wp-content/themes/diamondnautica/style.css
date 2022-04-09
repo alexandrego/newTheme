@@ -1,0 +1,367 @@
+/*
+Theme Name: Diamond Náutica
+Theme URI: https://diamondnautica.com.br
+Author: Alexandre Campos Gonçalves
+Author URI: https://www.linkedin.com/in/alexandrecgoncalves/
+Description: E-Commerce Náutico.
+Tags: loja nautica, ecommerce nautico e etc
+Version: 2.0.1
+Requires at least: 5.9
+Tested up to: 5.7
+Requires PHP: 7.4
+Text Domain: diamondnautica
+*/
+
+/* Fontes importadas do Google */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500&display=swap');
+
+/* Reseta todas as margens da pagina */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Montserrat','Helvetica Neue',Arial,sans-serif;
+  background-color: #ebe9eb;
+}
+
+header {
+  width: 100%;
+  height: 85px;
+  /* background-color: #070B24; */
+  background-color: #35353D;
+  /* border-radius: 0 0 15px 15px; */
+}
+#divHeader {
+  width: 90%;
+  padding: 10px;
+  margin: 0 auto;
+  display: inline-flex;
+  justify-content: space-between;
+}
+#divLogo {
+  margin: 0.3% 4% 0 10%;
+  width: 110px;
+}
+#logoBoat {
+  width: 85%;
+  border-radius: 50%;
+  background-color: whitesmoke;
+}
+#logoBoat:hover {
+  box-shadow: 0 0 1em #c0c6df;
+  transition: ease 0.4s;
+}
+#divSearch {
+  width: 265px;
+  display: contents;
+}
+#searchform {
+  margin: 15px;
+  width: 44%;
+}
+#searchform:hover {
+  box-shadow: 0 0 1em #c0c6df;
+  transition: ease 0.4s;
+}
+#searchInput {
+  width: 100%;
+  height: 16px;
+  padding: 8px 40px 8px 8px;
+}
+#searchInput:focus {
+  box-shadow: 0 0 1em #c0c6df;
+  transition: 0.3s;
+}
+#searchsubmit {
+  width: 35px;
+  height: 30px;
+  padding: 3px;
+  margin: 3px 0 0 -37px;
+  border: none;
+  background-color: white;
+}
+#searchsubmit:hover {
+  border-radius: 5px;
+  background-color: #c0c6df;
+  transition: 0.3s;
+  cursor: pointer;
+}
+#searchInpuAndButton {
+  width: 100%;
+  display: inline-flex;
+}
+.dashicons-search {
+  color: #11218a;
+}
+#divLogar {
+  width: 30%;
+  display: inline-flex;
+  justify-content: end;
+}
+#divLogarMobile, #divIconMenuMobile {
+  display: none;
+}
+#iconLogar {
+  width: 20%;
+  padding: 2%;
+}
+#dashicons-admin-users {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 50px;
+}
+#dashicons-admin-users:hover {
+  color: rgb(17, 117, 84);
+  transition: ease 2s;
+}
+#iconCart {
+  width: 20%;
+  padding: 3%;
+}
+#dashicons-cart {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 45px;
+}
+#dashicons-cart:hover {
+  color: rgb(17, 117, 84);
+  transition: ease 2s;
+}
+#showProducts {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#organizeProducts {
+  margin: 35px;
+  width: 100%;
+}
+.woocommerce .woocommerce-result-count {
+  display: none;
+}
+.woocommerce .woocommerce-ordering select {    vertical-align: top;
+    display: none;
+}
+/* .woocommerce ul.products li.product .woocommerce-placeholder {
+  border-radius: 5px;
+} */
+.woocommerce ul.products li.product a img {
+  border-radius: 5px;
+}
+
+/* Efeitos de carregamento */
+#divShimmerEffect {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#shimmerEffect {
+  margin: 35px;
+  width: 170px;
+}
+.shine {
+  background: #f6f7f8;
+  background-image: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+  background-repeat: no-repeat;
+  background-size: 800px 150px; 
+  /* display: inline-block; */
+  position: relative; 
+  
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards; 
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: placeholderShimmer;
+  -webkit-animation-timing-function: linear;
+}
+#box {
+  height: 150px;
+  width: 180px;
+  border-radius: 5px;
+}
+#line {
+  height: 10px;
+  margin-top: 10px;
+  width: 180px;
+}
+@-webkit-keyframes placeholderShimmer {
+  0% {
+    background-position: -468px 0;
+  }  
+  100% {
+    background-position: 468px 0; 
+  }
+}
+
+/* Responsividade do site */
+@media screen and (max-width: 800px) {}
+@media screen and (max-width: 600px) {
+  header {
+    height: 72px;
+  }
+  /* Menu retratil */
+  #check {
+    display: none;
+  }  
+  #check:checked ~ .barra {
+    -webkit-transform: translate(100%);
+       -moz-transform: translate(100%);
+        -ms-transform: translate(100%);
+         -o-transform: translate(100%);
+            transform: translate(100%);
+  } 
+  .icone {
+    font-size: 16px;
+    margin: 0 0 0 5%;
+    position: fixed;
+    z-index: 2;
+  }  
+  .barra {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #11218af8;
+    padding-top: 10px;
+    left: -100%;
+    -webkit-transition: all .25s linear;
+       -moz-transition: all .25s linear;
+        -ms-transition: all .25s linear;
+         -o-transition: all .25s linear;
+            transition: all .25s linear;
+  }
+  .barra, nav a {
+    top: 70px;
+    color: rgb(224, 221, 221);
+    text-decoration: none;
+  }
+  #divMenuMobile {
+    padding: 10px;
+    align-content: space-between;
+  }
+  /* Fim efeito menu retratil */
+  #divLogar {
+    display: none;
+    justify-content: unset;
+  }
+  #divLogarMobile {
+    width: 10%;
+    display: flex;
+    padding: 9px 10px 0 5px;
+  }
+  #divIconMenuMobile {
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #dashicons-menu {
+    font-size: 35px;
+    color: whitesmoke;
+  }
+  #spanIconMenu {
+    margin: 0 10px;
+  }
+  #divHeader {
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    display: inline-flex;
+    justify-content: space-between;
+  }
+  #divLogo {
+    margin: 1%;
+    /* width: 60%; */
+    padding: 1%;
+  }
+  #logoBoat {
+    width: 90%;
+  }
+  #divSearch {
+    /* width: 260px; */
+    display: block;
+    margin: 0 35px 0 -20px;
+  }
+  #searchform {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 280px) {
+  #divLogo {
+    padding: 4% 0 0 0;
+  }
+  #divLogarMobile {
+    margin: 0 3% 0 0;
+  }
+}
+
+
+/* Estilo do inicio para a página em construção */
+#divBodyConstruction {
+  width: 100%;
+  height: 100vh;
+  display: inline-flex;
+}
+#backgroundLogo {
+  width: 45%;
+  background-color: #11218a;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#showLogo {
+  width: 50%;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  transition: ease 0.4s; 
+}
+#showLogo:hover {
+  box-shadow: 0 0 1em #c0c6df;
+  transition: ease 0.4s;
+}
+#showLogoSvg {
+  width: 100%;
+}
+#backgroundInfo {
+  width: 55%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#showInfo {
+  width: 60%;
+}
+#showInfo, p {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+  #divBodyConstruction {
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+  }
+  #backgroundLogo {
+    width: 100%;
+    height: 100vh;
+  }
+  #backgroundInfo {
+    width: 100%;
+    height: 100vh;
+  }
+}
