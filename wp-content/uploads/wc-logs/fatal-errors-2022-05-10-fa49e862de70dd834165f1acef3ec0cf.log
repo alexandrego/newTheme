@@ -1,0 +1,24 @@
+2022-05-10T13:14:48+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_currencies() in /var/www/html/wp-content/themes/trusted-child/woocommerce/single-product/price.php:23
+Stack trace:
+#0 /var/www/html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1628): wc_get_template('single-product/...')
+#2 /var/www/html/wp-includes/class-wp-hook.php(307): woocommerce_template_single_price('')
+#3 /var/www/html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 /var/www/html/wp-includes/plugin.php(474): WP_Hook->do_action(Array)
+#5 /var/www/html/wp-content/plugins/woocommerce/templates/content-single-product.php(60): do_action('woocommerce_sin...')
+#6 /var/www/html/wp-includes/template.php(772): require('/var/www/html/w...')
+#7 /var/www/html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/var/www/html/w...', false)
+#8 /var/www/html/wp-content/plugins/woocommerce/tem, em /var/www/html/wp-content/themes/trusted-child/woocommerce/single-product/price.php, na linha 23
+
+2022-05-10T13:15:17+00:00 CRITICAL Uncaught Error: Call to undefined function woocommerce_currency_symbol() in /var/www/html/wp-content/themes/trusted-child/woocommerce/single-product/price.php:23
+Stack trace:
+#0 /var/www/html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /var/www/html/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1628): wc_get_template('single-product/...')
+#2 /var/www/html/wp-includes/class-wp-hook.php(307): woocommerce_template_single_price('')
+#3 /var/www/html/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters(NULL, Array)
+#4 /var/www/html/wp-includes/plugin.php(474): WP_Hook->do_action(Array)
+#5 /var/www/html/wp-content/plugins/woocommerce/templates/content-single-product.php(60): do_action('woocommerce_sin...')
+#6 /var/www/html/wp-includes/template.php(772): require('/var/www/html/w...')
+#7 /var/www/html/wp-content/plugins/woocommerce/includes/wc-core-functions.php(284): load_template('/var/www/html/w...', false)
+#8 /var/www/html/wp-content/plugins/woocommerc, em /var/www/html/wp-content/themes/trusted-child/woocommerce/single-product/price.php, na linha 23
+

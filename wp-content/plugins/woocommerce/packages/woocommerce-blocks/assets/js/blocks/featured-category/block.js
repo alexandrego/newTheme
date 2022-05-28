@@ -28,9 +28,11 @@ import { withSelect } from '@wordpress/data';
 import { compose, createHigherOrderComponent } from '@wordpress/compose';
 import PropTypes from 'prop-types';
 import { getSetting } from '@woocommerce/settings';
-import { Icon, folderStarred } from '@woocommerce/icons';
+import { folderStarred } from '@woocommerce/icons';
+import { Icon } from '@wordpress/icons';
 import ProductCategoryControl from '@woocommerce/editor-components/product-category-control';
 import ErrorPlaceholder from '@woocommerce/editor-components/error-placeholder';
+import TextToolbarButton from '@woocommerce/editor-components/text-toolbar-button';
 
 /**
  * Internal dependencies
@@ -46,16 +48,16 @@ import { withCategory } from '../../hocs';
 /**
  * Component to handle edit mode of "Featured Category".
  *
- * @param {Object} props Incoming props for the component.
- * @param {Object} props.attributes Incoming block attributes.
- * @param {boolean} props.isSelected Whether block is selected or not.
- * @param {function(any):any} props.setAttributes Function for setting new attributes.
- * @param {string} props.error Error message
- * @param {function(any):any} props.getCategory Function for getting category details.
- * @param {boolean} props.isLoading Whether loading or not.
- * @param {Object} props.category The product category object.
- * @param {function(any):any} props.debouncedSpeak Function for delayed speak.
- * @param {function():void} props.triggerUrlUpdate Function to update Shop now button Url.
+ * @param {Object}            props                  Incoming props for the component.
+ * @param {Object}            props.attributes       Incoming block attributes.
+ * @param {boolean}           props.isSelected       Whether block is selected or not.
+ * @param {function(any):any} props.setAttributes    Function for setting new attributes.
+ * @param {string}            props.error            Error message
+ * @param {function(any):any} props.getCategory      Function for getting category details.
+ * @param {boolean}           props.isLoading        Whether loading or not.
+ * @param {Object}            props.category         The product category object.
+ * @param {function(any):any} props.debouncedSpeak   Function for delayed speak.
+ * @param {function():void}   props.triggerUrlUpdate Function to update Shop now button Url.
  */
 const FeaturedCategory = ( {
 	attributes,
@@ -89,18 +91,29 @@ const FeaturedCategory = ( {
 						setAttributes( { contentAlign: nextAlign } );
 					} }
 				/>
-				<MediaReplaceFlow
-					mediaId={ mediaId }
-					mediaURL={ mediaSrc }
-					accept="image/*"
-					onSelect={ ( media ) => {
-						setAttributes( {
-							mediaId: media.id,
-							mediaSrc: media.url,
-						} );
-					} }
-					allowedTypes={ [ 'image' ] }
-				/>
+				<ToolbarGroup>
+					<MediaReplaceFlow
+						mediaId={ mediaId }
+						mediaURL={ mediaSrc }
+						accept="image/*"
+						onSelect={ ( media ) => {
+							setAttributes( {
+								mediaId: media.id,
+								mediaSrc: media.url,
+							} );
+						} }
+						allowedTypes={ [ 'image' ] }
+					/>
+					{ mediaId && mediaSrc ? (
+						<TextToolbarButton
+							onClick={ () =>
+								setAttributes( { mediaId: 0, mediaSrc: '' } )
+							}
+						>
+							{ __( 'Reset', 'woocommerce' ) }
+						</TextToolbarButton>
+					) : null }
+				</ToolbarGroup>
 				<ToolbarGroup
 					controls={ [
 						{
@@ -196,7 +209,7 @@ const FeaturedCategory = ( {
 
 		return (
 			<Placeholder
-				icon={ <Icon srcElement={ folderStarred } /> }
+				icon={ <Icon icon={ folderStarred } /> }
 				label={ __(
 					'Featured Category',
 					'woocommerce'
@@ -257,15 +270,22 @@ const FeaturedCategory = ( {
 			<InnerBlocks
 				template={ [
 					[
-						'core/button',
+						'core/buttons',
 						{
-							text: __(
-								'Shop now',
-								'woocommerce'
-							),
-							url: category.permalink,
-							align: 'center',
+							layout: { type: 'flex', justifyContent: 'center' },
 						},
+						[
+							[
+								'core/button',
+								{
+									text: __(
+										'Shop now',
+										'woocommerce'
+									),
+									url: category.permalink,
+								},
+							],
+						],
 					],
 				] }
 				templateLock="all"
@@ -274,7 +294,13 @@ const FeaturedCategory = ( {
 	};
 
 	const renderCategory = () => {
-		const { contentAlign, dimRatio, focalPoint, showDesc } = attributes;
+		const {
+			height,
+			contentAlign,
+			dimRatio,
+			focalPoint,
+			showDesc,
+		} = attributes;
 
 		const classes = classnames(
 			'wc-block-featured-category',
@@ -302,10 +328,7 @@ const FeaturedCategory = ( {
 		return (
 			<ResizableBox
 				className={ classes }
-				size={ {
-					height: '',
-					width: '',
-				} }
+				size={ { height } }
 				minHeight={ getSetting( 'min_height', 500 ) }
 				enable={ { bottom: true } }
 				onResizeStop={ onResizeStop }
@@ -337,7 +360,7 @@ const FeaturedCategory = ( {
 	const renderNoCategory = () => (
 		<Placeholder
 			className="wc-block-featured-category"
-			icon={ <Icon srcElement={ folderStarred } /> }
+			icon={ <Icon icon={ folderStarred } /> }
 			label={ __( 'Featured Category', 'woocommerce' ) }
 		>
 			{ isLoading ? (

@@ -87,11 +87,12 @@
 						?>
 					</div>
 					<!-- Exibição do botão Voltar caso o usuario esteja em um mobile -->
+				</div>				
 
-					<!-- Mostra campo de telefone, logar e carrinho -->
-					<?php trusted_tel_login_cart(); ?>
-					<!-- Mostra campo de telefone, logar e carrinho -->
-				</div>
+				<!-- Mostra campo de telefone, logar e carrinho -->
+				<?php trusted_tel_login_cart(); ?>
+				<!-- Mostra campo de telefone, logar e carrinho -->
+				
 				<!--Campo busca-->
 				<div id="buscaNovo">
 					<?php if ( class_exists( 'WooCommerce' ) ) {

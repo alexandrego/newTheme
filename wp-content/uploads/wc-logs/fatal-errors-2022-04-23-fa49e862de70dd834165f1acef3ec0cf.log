@@ -1,0 +1,144 @@
+2022-04-23T14:37:46+00:00 CRITICAL Uncaught Error: Call to undefined function trusted_tel_login_cart() in /var/www/html/wp-content/themes/diamondnautica/header.php:92
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(770): require_once()
+#1 /var/www/html/wp-includes/template.php(716): load_template('/var/www/html/w...', true, Array)
+#2 /var/www/html/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#3 /var/www/html/wp-content/themes/diamondnautica/index.php(4): get_header()
+#4 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#5 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#6 /var/www/html/index.php(17): require('/var/www/html/w...')
+#7 {main}
+  thrown, em /var/www/html/wp-content/themes/diamondnautica/header.php, na linha 92
+
+2022-04-23T14:38:06+00:00 CRITICAL Uncaught Error: Call to undefined function trusted_tel_login_cart() in /var/www/html/wp-content/themes/diamondnautica/header.php:92
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(770): require_once()
+#1 /var/www/html/wp-includes/template.php(716): load_template('/var/www/html/w...', true, Array)
+#2 /var/www/html/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#3 /var/www/html/wp-content/themes/diamondnautica/index.php(4): get_header()
+#4 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#5 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#6 /var/www/html/index.php(17): require('/var/www/html/w...')
+#7 {main}
+  thrown, em /var/www/html/wp-content/themes/diamondnautica/header.php, na linha 92
+
+2022-04-23T14:38:19+00:00 CRITICAL Uncaught Error: Call to undefined function trusted_tel_login_cart() in /var/www/html/wp-content/themes/diamondnautica/header.php:92
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(770): require_once()
+#1 /var/www/html/wp-includes/template.php(716): load_template('/var/www/html/w...', true, Array)
+#2 /var/www/html/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#3 /var/www/html/wp-content/themes/diamondnautica/index.php(4): get_header()
+#4 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#5 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#6 /var/www/html/index.php(17): require('/var/www/html/w...')
+#7 {main}
+  thrown, em /var/www/html/wp-content/themes/diamondnautica/header.php, na linha 92
+
+2022-04-23T14:38:47+00:00 CRITICAL Uncaught Error: Call to undefined function trusted_tel_login_cart() in /var/www/html/wp-content/themes/diamondnautica/header.php:92
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(770): require_once()
+#1 /var/www/html/wp-includes/template.php(716): load_template('/var/www/html/w...', true, Array)
+#2 /var/www/html/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#3 /var/www/html/wp-content/themes/diamondnautica/index.php(4): get_header()
+#4 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#5 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#6 /var/www/html/index.php(17): require('/var/www/html/w...')
+#7 {main}
+  thrown, em /var/www/html/wp-content/themes/diamondnautica/header.php, na linha 92
+
+2022-04-23T14:46:01+00:00 CRITICAL Uncaught Error: Call to undefined function trusted_tel_login_cart() in /var/www/html/wp-content/themes/diamondnautica/header.php:92
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(770): require_once()
+#1 /var/www/html/wp-includes/template.php(716): load_template('/var/www/html/w...', true, Array)
+#2 /var/www/html/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#3 /var/www/html/wp-content/themes/diamondnautica/index.php(4): get_header()
+#4 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#5 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#6 /var/www/html/index.php(17): require('/var/www/html/w...')
+#7 {main}
+  thrown, em /var/www/html/wp-content/themes/diamondnautica/header.php, na linha 92
+
+2022-04-23T14:46:50+00:00 CRITICAL Uncaught Error: Call to undefined function trusted_tel_login_cart() in /var/www/html/wp-content/themes/diamondnautica/header.php:92
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(770): require_once()
+#1 /var/www/html/wp-includes/template.php(716): load_template('/var/www/html/w...', true, Array)
+#2 /var/www/html/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#3 /var/www/html/wp-content/themes/diamondnautica/index.php(4): get_header()
+#4 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#5 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#6 /var/www/html/index.php(17): require('/var/www/html/w...')
+#7 {main}
+  thrown, em /var/www/html/wp-content/themes/diamondnautica/header.php, na linha 92
+
+2022-04-23T14:50:14+00:00 CRITICAL Uncaught Error: Call to undefined function trusted_tel_login_cart() in /var/www/html/wp-content/themes/diamondnautica/header.php:92
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(770): require_once()
+#1 /var/www/html/wp-includes/template.php(716): load_template('/var/www/html/w...', true, Array)
+#2 /var/www/html/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#3 /var/www/html/wp-content/themes/diamondnautica/index.php(4): get_header()
+#4 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#5 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#6 /var/www/html/index.php(17): require('/var/www/html/w...')
+#7 {main}
+  thrown, em /var/www/html/wp-content/themes/diamondnautica/header.php, na linha 92
+
+2022-04-23T14:51:09+00:00 CRITICAL Uncaught Error: Call to undefined function trusted_tel_login_cart() in /var/www/html/wp-content/themes/diamondnautica/header.php:92
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(770): require_once()
+#1 /var/www/html/wp-includes/template.php(716): load_template('/var/www/html/w...', true, Array)
+#2 /var/www/html/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#3 /var/www/html/wp-content/themes/diamondnautica/index.php(4): get_header()
+#4 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#5 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#6 /var/www/html/index.php(17): require('/var/www/html/w...')
+#7 {main}
+  thrown, em /var/www/html/wp-content/themes/diamondnautica/header.php, na linha 92
+
+2022-04-23T14:54:21+00:00 CRITICAL Uncaught Error: Call to undefined function trusted_tel_login_cart() in /var/www/html/wp-content/themes/diamondnautica/header.php:92
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(770): require_once()
+#1 /var/www/html/wp-includes/template.php(716): load_template('/var/www/html/w...', true, Array)
+#2 /var/www/html/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#3 /var/www/html/wp-content/themes/diamondnautica/index.php(4): get_header()
+#4 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#5 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#6 /var/www/html/index.php(17): require('/var/www/html/w...')
+#7 {main}
+  thrown, em /var/www/html/wp-content/themes/diamondnautica/header.php, na linha 92
+
+2022-04-23T14:54:56+00:00 CRITICAL Uncaught Error: Call to undefined function trusted_tel_login_cart() in /var/www/html/wp-content/themes/diamondnautica/header.php:92
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(770): require_once()
+#1 /var/www/html/wp-includes/template.php(716): load_template('/var/www/html/w...', true, Array)
+#2 /var/www/html/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#3 /var/www/html/wp-content/themes/diamondnautica/index.php(4): get_header()
+#4 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#5 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#6 /var/www/html/index.php(17): require('/var/www/html/w...')
+#7 {main}
+  thrown, em /var/www/html/wp-content/themes/diamondnautica/header.php, na linha 92
+
+2022-04-23T14:55:52+00:00 CRITICAL Uncaught Error: Call to undefined function trusted_tel_login_cart() in /var/www/html/wp-content/themes/diamondnautica/header.php:92
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(770): require_once()
+#1 /var/www/html/wp-includes/template.php(716): load_template('/var/www/html/w...', true, Array)
+#2 /var/www/html/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#3 /var/www/html/wp-content/themes/diamondnautica/index.php(4): get_header()
+#4 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#5 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#6 /var/www/html/index.php(17): require('/var/www/html/w...')
+#7 {main}
+  thrown, em /var/www/html/wp-content/themes/diamondnautica/header.php, na linha 92
+
+2022-04-23T15:32:09+00:00 CRITICAL Uncaught Error: Call to undefined function trusted_tel_login_cart() in /var/www/html/wp-content/themes/diamondnautica/header.php:93
+Stack trace:
+#0 /var/www/html/wp-includes/template.php(770): require_once()
+#1 /var/www/html/wp-includes/template.php(716): load_template('/var/www/html/w...', true, Array)
+#2 /var/www/html/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#3 /var/www/html/wp-content/themes/diamondnautica/index.php(4): get_header()
+#4 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#5 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#6 /var/www/html/index.php(17): require('/var/www/html/w...')
+#7 {main}
+  thrown, em /var/www/html/wp-content/themes/diamondnautica/header.php, na linha 93
+
